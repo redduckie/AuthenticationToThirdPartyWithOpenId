@@ -1,0 +1,16 @@
+/home/ali/ASPNetCoreProjects/AuthenticationGrafana/Authentication/bin/Debug/netcoreapp2.0/Authentication.deps.json
+/home/ali/ASPNetCoreProjects/AuthenticationGrafana/Authentication/bin/Debug/netcoreapp2.0/Authentication.runtimeconfig.json
+/home/ali/ASPNetCoreProjects/AuthenticationGrafana/Authentication/bin/Debug/netcoreapp2.0/Authentication.runtimeconfig.dev.json
+/home/ali/ASPNetCoreProjects/AuthenticationGrafana/Authentication/bin/Debug/netcoreapp2.0/Authentication.dll
+/home/ali/ASPNetCoreProjects/AuthenticationGrafana/Authentication/bin/Debug/netcoreapp2.0/Authentication.pdb
+/home/ali/ASPNetCoreProjects/AuthenticationGrafana/Authentication/bin/Debug/netcoreapp2.0/GrafanaApiClient.dll
+/home/ali/ASPNetCoreProjects/AuthenticationGrafana/Authentication/bin/Debug/netcoreapp2.0/IdentityServer.AspNetIdentityHelper.dll
+/home/ali/ASPNetCoreProjects/AuthenticationGrafana/Authentication/bin/Debug/netcoreapp2.0/GrafanaApiClient.pdb
+/home/ali/ASPNetCoreProjects/AuthenticationGrafana/Authentication/bin/Debug/netcoreapp2.0/IdentityServer.AspNetIdentityHelper.pdb
+/home/ali/ASPNetCoreProjects/AuthenticationGrafana/Authentication/obj/Debug/netcoreapp2.0/Authentication.csprojAssemblyReference.cache
+/home/ali/ASPNetCoreProjects/AuthenticationGrafana/Authentication/obj/Debug/netcoreapp2.0/Authentication.csproj.CoreCompileInputs.cache
+/home/ali/ASPNetCoreProjects/AuthenticationGrafana/Authentication/obj/Debug/netcoreapp2.0/Authentication.AssemblyInfoInputs.cache
+/home/ali/ASPNetCoreProjects/AuthenticationGrafana/Authentication/obj/Debug/netcoreapp2.0/Authentication.AssemblyInfo.cs
+/home/ali/ASPNetCoreProjects/AuthenticationGrafana/Authentication/obj/Debug/netcoreapp2.0/Authentication.csproj.CopyComplete
+/home/ali/ASPNetCoreProjects/AuthenticationGrafana/Authentication/obj/Debug/netcoreapp2.0/Authentication.dll
+/home/ali/ASPNetCoreProjects/AuthenticationGrafana/Authentication/obj/Debug/netcoreapp2.0/Authentication.pdb

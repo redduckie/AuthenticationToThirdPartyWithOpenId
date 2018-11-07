@@ -1,0 +1,63 @@
+﻿@model Authentication.Models.AccountViewModels.RegisterViewModel
+
+<div class="container">
+    <h3>Register New User</h3>
+
+
+
+    <div class="row">
+        <div class="col-md-4">
+            <form method="post">
+                <hr />
+                <div class="form-group">
+                    <div class="form-group">
+                        <label asp-for="FirstName"></label>
+                        <input asp-for="FirstName" class="form-control" />
+                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="LastName"></label>
+                        <input asp-for="LastName" class="form-control" />
+                        <span asp-validation-for="LastName" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="EmailAddress"></label>
+                    <input asp-for="EmailAddress" class="form-control" />
+                    <span asp-validation-for="EmailAddress" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Username"></label>
+                    <input asp-for="Username" class="form-control" />
+                    <span asp-validation-for="Username" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Password"></label>
+                    <input asp-for="Password" class="form-control" />
+                    <span asp-validation-for="@Model.Password" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ConfirmPassword"></label>
+                    <input asp-for="ConfirmPassword" class="form-control" />
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="AppUserRole.Name"></label>
+                    <select asp-for="AppUserRole.Name" asp-items="Model.ApplicationRoles" class="form-control"></select>
+                    <span asp-validation-for="AppUserRole.Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="GrafRole.RoleName"></label>
+                    <select asp-for="GrafRole.RoleName" asp-items="Model.GrafRoles" class="form-control"></select>
+                    <span asp-validation-for="GrafRole.RoleName" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="btn btn-success">Register</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationSummary" />
+}

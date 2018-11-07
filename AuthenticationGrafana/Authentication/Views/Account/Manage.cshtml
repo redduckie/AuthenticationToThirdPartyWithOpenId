@@ -1,0 +1,44 @@
+﻿@model Authentication.Models.ManageViewModels.ManageViewModel
+@{
+    ViewData["Title"] = "Manage User Account";
+}
+<div class="container">
+    <h4>Manage User Accounts</h4>
+    <div class="row">
+        <div class="col-md-3">
+            <a asp-action="Register" asp-controller="Account" class="btn btn-primary">Register New User</a>
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col-md-4 well">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Users</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var user in Model.Users)
+                    {
+                        <tr>
+                            <td>@user.UserName</td>
+                            <td><button type="button" class="btn btn-primary user-dashboard-roles">Dashboard Settings</button></td>
+                            <td><button type="button" class="btn btn-primary user-roles">UserRole</button></td>
+                        </tr>
+
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div id="manageViews" class="col-md-8"></div>
+    </div>
+</div>
+
+
+@section scripts{
+    @*<script asp-add-nonce="true" type="text/javascript">
+
+        </script>*@
+    <script src="~/js/manage-view.js"></script>
+}

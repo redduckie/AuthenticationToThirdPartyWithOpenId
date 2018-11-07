@@ -1,0 +1,9 @@
+/home/ali/ASPNetCoreProjects/AuthenticationGrafana/IdentityServer.AspNetIdentityHelper/bin/Debug/netstandard2.0/IdentityServer.AspNetIdentityHelper.deps.json
+/home/ali/ASPNetCoreProjects/AuthenticationGrafana/IdentityServer.AspNetIdentityHelper/bin/Debug/netstandard2.0/IdentityServer.AspNetIdentityHelper.dll
+/home/ali/ASPNetCoreProjects/AuthenticationGrafana/IdentityServer.AspNetIdentityHelper/bin/Debug/netstandard2.0/IdentityServer.AspNetIdentityHelper.pdb
+/home/ali/ASPNetCoreProjects/AuthenticationGrafana/IdentityServer.AspNetIdentityHelper/obj/Debug/netstandard2.0/IdentityServer.AspNetIdentityHelper.csprojAssemblyReference.cache
+/home/ali/ASPNetCoreProjects/AuthenticationGrafana/IdentityServer.AspNetIdentityHelper/obj/Debug/netstandard2.0/IdentityServer.AspNetIdentityHelper.csproj.CoreCompileInputs.cache
+/home/ali/ASPNetCoreProjects/AuthenticationGrafana/IdentityServer.AspNetIdentityHelper/obj/Debug/netstandard2.0/IdentityServer.AspNetIdentityHelper.AssemblyInfoInputs.cache
+/home/ali/ASPNetCoreProjects/AuthenticationGrafana/IdentityServer.AspNetIdentityHelper/obj/Debug/netstandard2.0/IdentityServer.AspNetIdentityHelper.AssemblyInfo.cs
+/home/ali/ASPNetCoreProjects/AuthenticationGrafana/IdentityServer.AspNetIdentityHelper/obj/Debug/netstandard2.0/IdentityServer.AspNetIdentityHelper.dll
+/home/ali/ASPNetCoreProjects/AuthenticationGrafana/IdentityServer.AspNetIdentityHelper/obj/Debug/netstandard2.0/IdentityServer.AspNetIdentityHelper.pdb

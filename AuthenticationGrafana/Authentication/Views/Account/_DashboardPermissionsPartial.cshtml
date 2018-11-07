@@ -1,0 +1,69 @@
+﻿@model Authentication.Models.ManageViewModels.DashboardPermissionsViewModel
+@{
+    ViewData["Title"] = "Dashboard Specific Roles";
+}
+
+
+<div class="well panel panel-primary">
+    <div class="panel-heading">@Model.UserName - Dashboard Permissions</div>
+    <div class="panel-body">
+        <form asp-controller="Account" asp-action="UserDashboardRolesAsync" method="post">
+            <div class="row">
+                @*<div class="form-group col-md-4">
+                        <label asp-for="SelectedFolder"></label>
+                        <select asp-for="SelectedFolder" asp-items="Model.Folders" class="form-control"></select>
+                        <span asp-validation-for="SelectedFolder" class="text-danger"></span>
+                    </div>*@
+                <div class="form-group col-md-4">
+                    <label asp-for="SelectedDashboardName"></label>
+                    <select asp-for="SelectedDashboardName" asp-items="Model.DashboardNames" class="form-control"></select>
+                    <span asp-validation-for="SelectedDashboardName" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-4">
+                    <label asp-for="UserRole"></label>
+                    <select asp-for="UserRole" asp-items="Model.DashboardRoles" class="form-control"></select>
+                    <span asp-validation-for="UserRole" class="text-danger"></span>
+                </div>
+                <div class=" form-group col-md-2">
+                    <button id="btnAddDashboardRole" type="button" class="btn btn-success btn-form-group"><i class="glyphicon glyphicon-edit"></i> Add/Update</button>
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-md-12">
+                    @if (Model.DashboardRoles.Count() > 0)
+                    {
+                        <table class="table table-striped table-dark">
+                            <thead>
+                                <tr>
+                                    <th>Dashboard Name</th>
+                                    <th>User Role</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                @foreach (var userRole in Model.UserDashboardRoles)
+                                {
+                                    <tr>
+                                        <td class="hidden"><input type="hidden" value="@userRole.DashboardId" /></td>
+                                        <td class="hidden"><input type="hidden" value="@userRole.UserDashboardRoleId" /></td>
+                                        <td>@userRole.DashboardName</td>
+                                        <td>@userRole.UserDashBoardRole</td>
+                                        <td><button type="button" class="btn btn-danger user-dashboard-permission-delete"><i class="glyphicon glyphicon-minus"></i> Delete</button></td>
+                                    </tr>
+
+                                }
+                            </tbody>
+                        </table>
+                    }
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
+
+@section scripts{
+    <script src="~/js/manage-view.js"></script>
+}
+

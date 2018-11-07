@@ -1,0 +1,65 @@
+﻿@model Authentication.Models.ManageViewModels.RoleInputViewModel
+@{
+    ViewData["Title"] = "Manage User Account";
+}
+
+
+<div class="well panel panel-primary">
+    <div class="panel-heading">@Model.UserName - User Roles</div>
+    <div class="panel-body">
+        <form asp-controller="Account" asp-action="AddUserRoleAsync" method="post">
+            <div class="row">
+                <div class="form-group col-md-4">
+                    <label asp-for="UserGrafanaRole"></label>
+                    <select asp-for="UserGrafanaRole" asp-items="Model.GrafanaRoles" class="form-control"></select>
+                    <span asp-validation-for="UserGrafanaRole" class="text-danger"></span>
+                </div>
+                <div class=" form-group col-md-2">
+                    <button id="btnUpdateDashboardRole" type="button" class="btn btn-success btn-form-group"><i class="glyphicon glyphicon-edit"></i> Update</button>
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+
+                <input asp-for="UserName" hidden />
+                <div class="form-group col-md-2">
+                    <label asp-for="UserRoles"></label>
+                    <select asp-for="IdentityRole.Name" asp-items="Model.RolesList" class="form-control"></select>
+                    <span asp-validation-for="IdentityRole.Name" class="text-danger"></span>
+                </div>
+                <div class="col-md-2">
+                    <button id="btnAdd" type="button" class="btn btn-success btn-form-group"><i class="glyphicon glyphicon-plus"></i> Add</button>
+                </div>
+
+
+                <div class="col-md-8">
+                    <table class="table table-striped table-dark">
+                        <thead>
+                            <tr>
+                                <th>Users Roles</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var userRole in Model.UserRoles)
+                            {
+                                <tr>
+                                    <td>@userRole</td>
+                                    @if (Model.UserRoles.Count > 1)
+                                    {
+                                        <td><button type="button" class="btn btn-danger user-role-delete"><i class="glyphicon glyphicon-minus"></i> Delete</button></td>
+                                    }
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
+
+@section scripts{
+    <script src="~/js/manage-view.js"></script>
+}
+

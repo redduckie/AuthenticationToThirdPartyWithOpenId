@@ -1,0 +1,9 @@
+/home/ali/ASPNetCoreProjects/AuthenticationGrafana/GrafanaApiClient/bin/Debug/netstandard2.0/GrafanaApiClient.deps.json
+/home/ali/ASPNetCoreProjects/AuthenticationGrafana/GrafanaApiClient/bin/Debug/netstandard2.0/GrafanaApiClient.dll
+/home/ali/ASPNetCoreProjects/AuthenticationGrafana/GrafanaApiClient/bin/Debug/netstandard2.0/GrafanaApiClient.pdb
+/home/ali/ASPNetCoreProjects/AuthenticationGrafana/GrafanaApiClient/obj/Debug/netstandard2.0/GrafanaApiClient.csprojAssemblyReference.cache
+/home/ali/ASPNetCoreProjects/AuthenticationGrafana/GrafanaApiClient/obj/Debug/netstandard2.0/GrafanaApiClient.csproj.CoreCompileInputs.cache
+/home/ali/ASPNetCoreProjects/AuthenticationGrafana/GrafanaApiClient/obj/Debug/netstandard2.0/GrafanaApiClient.AssemblyInfoInputs.cache
+/home/ali/ASPNetCoreProjects/AuthenticationGrafana/GrafanaApiClient/obj/Debug/netstandard2.0/GrafanaApiClient.AssemblyInfo.cs
+/home/ali/ASPNetCoreProjects/AuthenticationGrafana/GrafanaApiClient/obj/Debug/netstandard2.0/GrafanaApiClient.dll
+/home/ali/ASPNetCoreProjects/AuthenticationGrafana/GrafanaApiClient/obj/Debug/netstandard2.0/GrafanaApiClient.pdb

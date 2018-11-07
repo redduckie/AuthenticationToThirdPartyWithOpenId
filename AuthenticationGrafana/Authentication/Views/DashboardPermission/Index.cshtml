@@ -1,0 +1,44 @@
+﻿@model Authentication.Models.DashboardViewModels.DashboardIndexViewModel
+<div class="container">
+    <h4>Manage Dashboard Roles</h4>
+
+    @*<div class="row">
+            <div class="col-md-12 well">
+                <div class="form-group col-md-4">
+                    <label asp-for="SelectedDashboard"></label>
+                    <select asp-for="SelectedDashboard" asp-items="Model.DashboardSelectList" class="form-control"></select>
+                    <span asp-validation-for="SelectedDashboard" class="text-danger"></span>
+                </div>
+            </div>
+        </div>*@
+    <hr />
+
+    <div class="row">
+        <div class="col-md-4 well">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>DashBoards</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var dashboard in Model.DashboardsList)
+                    {
+                        <tr>
+                            <td class="hidden"><input type="hidden" value="@dashboard.Id" /></td>
+                            <td>@dashboard.Title</td>
+                            <td><button type="button" class="btn btn-primary dashboard-user-roles">Dashboard Settings</button></td>
+                        </tr>
+
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-8" id="dashboard-options"></div>
+    </div>
+</div>
+
+@section scripts{
+
+    <script src="~/js/dashboard-roles.js"></script>
+}
